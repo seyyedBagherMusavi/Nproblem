@@ -1,4 +1,8 @@
-In this example, we will illustrate the challenges of addressing the N+1 problem. Consider an entity called "A," which has relationships with "B," "C," and "D." If we want to fetch all the data with a single query, we can use a left join. However, the size of the data will increase with each additional relationship. For instance, if we want to fetch "A" and "B" together, we can use the following query:
+In this example, we will illustrate the challenges of addressing the N+1 problem. 
+Consider an entity called "A," which has relationships 
+with "B," "C," and "D."
+![Mpdel layer](Model.png?raw=true "Model layer")
+If we want to fetch all the data with a single query, we can use a left join. However, the size of the data will increase with each additional relationship. For instance, if we want to fetch "A" and "B" together, we can use the following query:
 ```sql
 select
     a1_0.id,
